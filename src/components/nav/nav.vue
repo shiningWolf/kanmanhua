@@ -1,8 +1,4 @@
 <template>
-    <h1 class="title">
-        豆瓣
-    <ul class="nav">
-	        </router-link>
   <div>
     <mt-header title="属于你的漫画APP">
     </mt-header>
