@@ -6,8 +6,6 @@ body{
 ul {
 	li{
 		list-style: none;
-		float:left;
-    	margin-right: 1.2rem;
 	}
 }
 h1 {
@@ -28,3 +26,5 @@ a {
 	width:100px;
 	height:20px;
 }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, table, th, td {margin:0; padding:0;}  

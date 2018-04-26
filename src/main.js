@@ -6,6 +6,7 @@ import router from './router'
 import MintUi from 'mint-ui'
 import 'mint-ui/lib/style.css'
 import './styles/main.scss'
+import 'font-awesome/css/font-awesome.css'
 Vue.use(MintUi);
 Vue.config.productionTip = false
 

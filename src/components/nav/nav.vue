@@ -27,35 +27,27 @@
 	        </router-link>
     	</li>
     </ul>
+    </mt-header>
   </div>
 </template>
 
 <script>
 
 export default {
-  name: 'nav',
+  name: 'db-nav',
   data(){
     return {
         
     }
+  },
+  methods:{
+    showMenu(){
+      alert(1);
+    } 
   }
 }
 </script>
 
 <style lang="scss" scope>
-.navline{
-  overflow:hidden;
-}
-.nav{
-  display:inline-block;
-  height:1.6rem;
-  line-height: 1.6rem;
-}
-.title{
-  display:inline-block;
-  float:left;
-  margin-left:1rem;
-  line-height: 1.6rem;
-  color: #00b600;
-}
+
 </style>
