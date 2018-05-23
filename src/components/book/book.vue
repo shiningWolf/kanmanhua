@@ -1,6 +1,6 @@
 <template>
   <div class="book">
-     <img class="bookImg" />
+     <img class="bookImg" :src="src" @click="goMenu"/>
      <label>{{title}}</label>
   </div>
 </template>
@@ -14,10 +14,16 @@ export default {
     }
   },
   props:{
-  	title:String
+  	title:String,
+    src:String
   },
   created(){
   	
+  },
+  methods:{
+    goMenu(){
+      this.$router.push('/menu');
+    }
   }
 }
 </script>

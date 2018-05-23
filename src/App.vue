@@ -1,12 +1,20 @@
 <template>
   <div id="app">
+  	<db-nav></db-nav>
     <router-view/>
+    <db-footer></db-footer>
   </div>
 </template>
 
 <script>
+import nav from '@/components/nav/nav'
+import footer from '@/components/footer/footer'
 export default {
-  name: 'App'
+  name: 'App',
+  components:{
+    'db-nav':nav,
+    'db-footer':footer
+  }
 }
 </script>
 

@@ -1,6 +1,9 @@
 <template>
   <div>
-    <mt-header title="属于你的漫画APP">
+    <mt-header :title="title">
+        <router-link to="/" slot="left">
+          <mt-button icon="back">返回</mt-button>
+        </router-link>
     </mt-header>
   </div>
 </template>
@@ -12,6 +15,12 @@ export default {
   data(){
     return {
         
+    }
+  },
+  props:{
+    title:{
+      type:String,
+      default:"属于你的漫画APP"
     }
   },
   methods:{

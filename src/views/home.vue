@@ -1,29 +1,34 @@
 <template>
   <div>
-     <db-nav></db-nav>
      <div class="container">
-        <db-book v-for="item in list" :title="item">
+        <db-book v-for="item in list" :title="item.name" :src="resolve(item.png)">
         </db-book>
      </div>
-     <db-footer></db-footer>
   </div>
 </template>
 
 <script>
-import nav from '../components/nav/nav'
 import book from '../components/book/book'
-import footer from '../components/footer/footer'
 export default {
   name: 'App',
   data(){
     return {
-       list:["1","2"] 
+       list:[{
+        name:'一拳超人',
+        png:'1.jpg'
+       },{
+        name:'七大罪',
+        png:'2'
+       }] 
     }
   },
   components:{
-    'db-nav':nav,
-    'db-book':book,
-    'db-footer':footer
+    'db-book':book
+  },
+  methods:{
+    resolve(name){
+      return 'src/assets/'+name
+    }
   }
 }
 </script>
